@@ -1,0 +1,19 @@
+{
+  "name": "@prorocketeers/devops-academy-docs",
+  "version": "1.0.0",
+  "author": "ProRocketeers",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "NODE_ENV=production vuepress build docs",
+    "deploy": "node scripts/deploy.js"
+  },
+  "dependencies": {
+    "date-fns": "^1.30.1",
+    "vuepress": "^1.0.0-alpha.46"
+  },
+  "devDependencies": {
+    "dotenv": "^7.0.0",
+    "gh-pages": "^2.0.1"
+  }
+}
