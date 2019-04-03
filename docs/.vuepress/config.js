@@ -1,8 +1,6 @@
 const PATH_PREFIX = '/kb'
-const BASE_PATH = process.env.NODE_ENV === 'production' ? '/dvps-academy/' : '/'
 
 module.exports = {
-  base: BASE_PATH,
   title: 'DevOps Academy KB',
   description: 'ProRocketeers DevOps Academy Knowledge Base',
   head: [['link', { rel: 'icon', href: '/favicon.png' }]],

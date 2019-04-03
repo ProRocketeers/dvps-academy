@@ -1,14 +1,18 @@
 # DevOps Academy KB
 
-## Deploying
+## Dev
 
-### Generate a Github token and save it to GITHUB_TOKEN environmental variable
-
-```bash
-echo "GITHUB_TOKEN=YOUR_GITHUB_TOKEN" > .env
+```
+yarn dev
 ```
 
-### Commence!
+## Build
+
+```
+yarn build
+```
+
+## Deploy
 
 ```
 yarn deploy
