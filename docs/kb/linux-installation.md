@@ -22,7 +22,7 @@
 ## Něco o systému
 
 - Linux je pouze jádro (tvůrce Linus Torvalds 1991)
-- GNU operačni system (Richard Stallman 1983). Obsahuje spoustu různých příkazy, se kterými se setkáme např. v kontejnerech nebo MacOS
+- GNU operačni system (Richard Stallman 1983). Obsahuje spoustu různých aplikací, se kterými se setkáme např. v kontejnerech nebo MacOS
 - Rozděleni dle distribuce
 - Dříve se použival SysV init system (zavaděni sluzeb za ruznych kroku systemu)
 - Nyni se používá systemd (OpenRC alpine)
