@@ -2,7 +2,6 @@ const fs = require('fs')
 const path = require('path')
 const { format } = require('date-fns')
 const { publish } = require('gh-pages')
-require('dotenv').config()
 
 const PAGES_DOMAIN = 'devops.cosik.cz'
 const DEST_PATH = path.join(process.cwd(), 'public')

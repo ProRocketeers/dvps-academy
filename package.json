@@ -13,7 +13,6 @@
     "vuepress": "^1.0.0-alpha.46"
   },
   "devDependencies": {
-    "dotenv": "^7.0.0",
     "gh-pages": "^2.0.1"
   }
 }
