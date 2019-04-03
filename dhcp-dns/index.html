@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>DHCP, DNS | DevOps Academy KB</title>
+    <meta name="description" content="ProRocketeers DevOps Academy Knowledge Base">
+    <link rel="icon" href="/dvps-academy/favicon.png">
+    
+    <link rel="preload" href="/dvps-academy/assets/css/0.styles.912d4325.css" as="style"><link rel="preload" href="/dvps-academy/assets/js/app.886ef00e.js" as="script"><link rel="preload" href="/dvps-academy/assets/js/2.304a0ef6.js" as="script"><link rel="preload" href="/dvps-academy/assets/js/12.f267791e.js" as="script"><link rel="prefetch" href="/dvps-academy/assets/js/10.e6029dfe.js"><link rel="prefetch" href="/dvps-academy/assets/js/11.fad60899.js"><link rel="prefetch" href="/dvps-academy/assets/js/13.87292f89.js"><link rel="prefetch" href="/dvps-academy/assets/js/14.0b0a2013.js"><link rel="prefetch" href="/dvps-academy/assets/js/15.7943a401.js"><link rel="prefetch" href="/dvps-academy/assets/js/16.8252c642.js"><link rel="prefetch" href="/dvps-academy/assets/js/17.b7154d52.js"><link rel="prefetch" href="/dvps-academy/assets/js/18.fd5a2d9d.js"><link rel="prefetch" href="/dvps-academy/assets/js/19.5e6e544f.js"><link rel="prefetch" href="/dvps-academy/assets/js/3.741339cf.js"><link rel="prefetch" href="/dvps-academy/assets/js/4.8e5dbcef.js"><link rel="prefetch" href="/dvps-academy/assets/js/5.1b10caa4.js"><link rel="prefetch" href="/dvps-academy/assets/js/6.b47b74f4.js"><link rel="prefetch" href="/dvps-academy/assets/js/7.51f520df.js"><link rel="prefetch" href="/dvps-academy/assets/js/8.2cba91c1.js"><link rel="prefetch" href="/dvps-academy/assets/js/9.92106e2c.js">
+    <link rel="stylesheet" href="/dvps-academy/assets/css/0.styles.912d4325.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/dvps-academy/" class="home-link router-link-active"><!----> <span class="site-name">DevOps Academy KB</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/dvps-academy/" class="nav-link">KB</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/dvps-academy/" class="nav-link">KB</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/dvps-academy/readme/" class="sidebar-link">Úvod</a></li><li><a href="/dvps-academy/linux-installation/" class="sidebar-link">Úvod a instalace</a></li><li><a href="/dvps-academy/linux-file-handling/" class="sidebar-link">Práce se soubory</a></li><li><a href="/dvps-academy/archiving/" class="sidebar-link">Archivace</a></li><li><a href="/dvps-academy/ports/" class="sidebar-link">TCP/IP porty a protokoly</a></li><li><a href="/dvps-academy/cron-systemd/" class="sidebar-link">Cron, systémové služby</a></li><li><a href="/dvps-academy/configs/" class="sidebar-link">Typy konfiguračních souborů</a></li><li><a href="/dvps-academy/git/" class="sidebar-link">Git</a></li><li><a href="/dvps-academy/node/" class="sidebar-link">Node.js</a></li><li><a href="/dvps-academy/nginx/" class="sidebar-link">Nginx</a></li><li><a href="/dvps-academy/centos/" class="sidebar-link">CentOS</a></li><li><a href="/dvps-academy/dhcp-dns/" class="active sidebar-link">DHCP, DNS</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/dvps-academy/dhcp-dns/#dhcp" class="sidebar-link">DHCP</a></li><li class="sidebar-sub-header"><a href="/dvps-academy/dhcp-dns/#dns" class="sidebar-link">DNS</a></li><li class="sidebar-sub-header"><a href="/dvps-academy/dhcp-dns/#bind9" class="sidebar-link">bind9</a></li></ul></li><li><a href="/dvps-academy/bash-scripting/" class="sidebar-link">Bash Scripting</a></li><li><a href="/dvps-academy/ansible/" class="sidebar-link">Ansible</a></li></ul> </aside> <main class="page"> <div class="content default"><h1 id="dhcp-dns"><a href="#dhcp-dns" aria-hidden="true" class="header-anchor">#</a> DHCP, DNS</h1> <h2 id="dhcp"><a href="#dhcp" aria-hidden="true" class="header-anchor">#</a> DHCP</h2> <ul><li>Dynamic Host Configuration Protocol</li> <li>Server běží portu 67, klient běží na portu 68</li> <li>Přidělení IP adresy, výchozí brány a DNS serverům klientům</li></ul> <div class="language- extra-class"><pre class="language-text"><code>dhclient enp0s8
+</code></pre></div><h2 id="dns"><a href="#dns" aria-hidden="true" class="header-anchor">#</a> DNS</h2> <ul><li>Domain Name System</li> <li>Služba běží na port 53</li> <li>Překlad názvů domén na IP adresy</li> <li>Překládá se nejdříve podle záznamů v /etc/hosts, poté se posílají požadavky na nastavené DNS servery v /etc/resolv.conf</li></ul> <h2 id="bind9"><a href="#bind9" aria-hidden="true" class="header-anchor">#</a> bind9</h2> <ul><li>Vlastní DNS server</li> <li>Instalace služby</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">sudo</span> yum <span class="token function">install</span> bind bind-utils
+</code></pre></div><ul><li>Nastavíme náš DNS server v /etc/resolv.conf</li> <li>Hlavní konfigurační soubor je /etc/named.conf</li></ul> <div class="language- extra-class"><pre class="language-text"><code>sudo nano /etc/named.conf
+</code></pre></div><ul><li>Nastavíme forwardování na Google DNS</li></ul> <div class="language- extra-class"><pre class="language-text"><code>acl goodclients {
+        192.0.2.0/24;
+        localhost;
+        localnets;
+};
+
+options {
+        directory &quot;/var/cache/bind&quot;;
+
+        recursion yes;
+        allow-query { goodclients; };
+
+        forwarders {
+                8.8.8.8;
+                8.8.4.4;
+        };
+        forward only;
+
+        dnssec-validation auto;
+
+        auth-nxdomain no;    # conform to RFC1035
+        listen-on-v6 { any; };
+};
+</code></pre></div><ul><li>Restartujeme službu</li> <li>Otestujeme</li></ul> <div class="language- extra-class"><pre class="language-text"><code>sudo systemctl restart named
+ping uxes.cz
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/dvps-academy/centos/" class="prev">
+          CentOS
+        </a></span> <span class="next"><a href="/dvps-academy/bash-scripting/">
+          Bash Scripting
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/dvps-academy/assets/js/app.886ef00e.js" defer></script><script src="/dvps-academy/assets/js/2.304a0ef6.js" defer></script><script src="/dvps-academy/assets/js/12.f267791e.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cron, systémové služby | DevOps Academy KB</title>
+    <meta name="description" content="ProRocketeers DevOps Academy Knowledge Base">
+    <link rel="icon" href="/dvps-academy/favicon.png">
+    
+    <link rel="preload" href="/dvps-academy/assets/css/0.styles.912d4325.css" as="style"><link rel="preload" href="/dvps-academy/assets/js/app.886ef00e.js" as="script"><link rel="preload" href="/dvps-academy/assets/js/2.304a0ef6.js" as="script"><link rel="preload" href="/dvps-academy/assets/js/11.fad60899.js" as="script"><link rel="prefetch" href="/dvps-academy/assets/js/10.e6029dfe.js"><link rel="prefetch" href="/dvps-academy/assets/js/12.f267791e.js"><link rel="prefetch" href="/dvps-academy/assets/js/13.87292f89.js"><link rel="prefetch" href="/dvps-academy/assets/js/14.0b0a2013.js"><link rel="prefetch" href="/dvps-academy/assets/js/15.7943a401.js"><link rel="prefetch" href="/dvps-academy/assets/js/16.8252c642.js"><link rel="prefetch" href="/dvps-academy/assets/js/17.b7154d52.js"><link rel="prefetch" href="/dvps-academy/assets/js/18.fd5a2d9d.js"><link rel="prefetch" href="/dvps-academy/assets/js/19.5e6e544f.js"><link rel="prefetch" href="/dvps-academy/assets/js/3.741339cf.js"><link rel="prefetch" href="/dvps-academy/assets/js/4.8e5dbcef.js"><link rel="prefetch" href="/dvps-academy/assets/js/5.1b10caa4.js"><link rel="prefetch" href="/dvps-academy/assets/js/6.b47b74f4.js"><link rel="prefetch" href="/dvps-academy/assets/js/7.51f520df.js"><link rel="prefetch" href="/dvps-academy/assets/js/8.2cba91c1.js"><link rel="prefetch" href="/dvps-academy/assets/js/9.92106e2c.js">
+    <link rel="stylesheet" href="/dvps-academy/assets/css/0.styles.912d4325.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/dvps-academy/" class="home-link router-link-active"><!----> <span class="site-name">DevOps Academy KB</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/dvps-academy/" class="nav-link">KB</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/dvps-academy/" class="nav-link">KB</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/dvps-academy/readme/" class="sidebar-link">Úvod</a></li><li><a href="/dvps-academy/linux-installation/" class="sidebar-link">Úvod a instalace</a></li><li><a href="/dvps-academy/linux-file-handling/" class="sidebar-link">Práce se soubory</a></li><li><a href="/dvps-academy/archiving/" class="sidebar-link">Archivace</a></li><li><a href="/dvps-academy/ports/" class="sidebar-link">TCP/IP porty a protokoly</a></li><li><a href="/dvps-academy/cron-systemd/" class="active sidebar-link">Cron, systémové služby</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/dvps-academy/cron-systemd/#cron" class="sidebar-link">Cron</a></li><li class="sidebar-sub-header"><a href="/dvps-academy/cron-systemd/#systemd" class="sidebar-link">Systemd</a></li></ul></li><li><a href="/dvps-academy/configs/" class="sidebar-link">Typy konfiguračních souborů</a></li><li><a href="/dvps-academy/git/" class="sidebar-link">Git</a></li><li><a href="/dvps-academy/node/" class="sidebar-link">Node.js</a></li><li><a href="/dvps-academy/nginx/" class="sidebar-link">Nginx</a></li><li><a href="/dvps-academy/centos/" class="sidebar-link">CentOS</a></li><li><a href="/dvps-academy/dhcp-dns/" class="sidebar-link">DHCP, DNS</a></li><li><a href="/dvps-academy/bash-scripting/" class="sidebar-link">Bash Scripting</a></li><li><a href="/dvps-academy/ansible/" class="sidebar-link">Ansible</a></li></ul> </aside> <main class="page"> <div class="content default"><h1 id="cron-systemove-sluzby"><a href="#cron-systemove-sluzby" aria-hidden="true" class="header-anchor">#</a> Cron, systémové služby</h1> <h2 id="cron"><a href="#cron" aria-hidden="true" class="header-anchor">#</a> Cron</h2> <ul><li>Plánovač úloh</li> <li>Spouštění úloh v různých časových intervalech</li> <li>Formát <code>[Minuta] [Hodina] [Den_v_mesici] [Mesic] [Den_v_tydnu] [prikaz]</code></li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># Editace globalnich zaznamu</span>
+<span class="token function">sudo</span> <span class="token function">crontab</span> -e
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code># Kazdy den ve 2 hodiny ráno
+0 2 * * * /opt/script.sh
+
+# Kazdou desátou minutu
+*/10 * * * * /opt/script.sh
+
+# Kazdou minutu
+* * * * * /opt/script.sh
+</code></pre></div><ul><li>Online crontab plánovač: https://crontab.guru/</li></ul> <h2 id="systemd"><a href="#systemd" aria-hidden="true" class="header-anchor">#</a> Systemd</h2> <blockquote><p>Work In Progress</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/dvps-academy/ports/" class="prev">
+          TCP/IP porty a protokoly
+        </a></span> <span class="next"><a href="/dvps-academy/configs/">
+          Typy konfiguračních souborů
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/dvps-academy/assets/js/app.886ef00e.js" defer></script><script src="/dvps-academy/assets/js/2.304a0ef6.js" defer></script><script src="/dvps-academy/assets/js/11.fad60899.js" defer></script>
+  </body>
+</html>
