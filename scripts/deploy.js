@@ -3,7 +3,7 @@ const path = require('path')
 const { format } = require('date-fns')
 const { publish } = require('gh-pages')
 
-const PAGES_DOMAIN = 'devops.cosik.cz'
+const PAGES_DOMAIN = 'devops.uxes.cz'
 const DEST_PATH = path.join(process.cwd(), 'public')
 
 if (!fs.existsSync(DEST_PATH)) {
