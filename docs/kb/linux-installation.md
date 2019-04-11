@@ -61,3 +61,18 @@
 # vs
 ./cool-folder/hereiam.txt
 ```
+
+## Tilda vs. /home/\$USER
+
+Tilda representuje `/home/$USER`, kde `$USER` je momentální uživatel.
+
+Následující příkazy jsou ekvivalentní.
+
+```bash
+# Doporucene
+cd ~
+
+# Nedoporucuje se
+cd
+cd /home/$USER
+```
