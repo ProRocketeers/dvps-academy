@@ -15,6 +15,7 @@ const SIDEBARS = {
     [`${KB_PATH_PREFIX}/dhcp-dns`, 'DHCP, DNS'],
     [`${KB_PATH_PREFIX}/bash-scripting`, 'Bash Scripting'],
     [`${KB_PATH_PREFIX}/ansible`, 'Ansible'],
+    [`${KB_PATH_PREFIX}/gitlab`, 'Gitlab CI/CD'],
   ],
   homework: [[`${HOMEWORK_PATH_PREFIX}/1`, 'První sada']],
 }
