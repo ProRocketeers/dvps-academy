@@ -167,13 +167,13 @@ pwd # /home/ondra
 - Se souborovými deskriptory lze manipulovat
 
 ```bash
-# Přesměruje
+# Přesměruje stdout do soubor.txt
 find / -name linux 1>soubor.txt
 
-# Přesměruje
+# Přesměruje stderr do soubor.txt
 find / -name linux 2>soubor.txt
 
-# Přesměruje stderr na stdout
+# Přesměruje stderr do stdout
 find / -name linux 2>&1
 ```
 
