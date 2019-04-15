@@ -7,7 +7,7 @@
     <meta name="description" content="ProRocketeers DevOps Academy Knowledge Base">
     <link rel="icon" href="/favicon.png">
     
-    <link rel="preload" href="/assets/css/0.styles.c1070e8a.css" as="style"><link rel="preload" href="/assets/js/app.fb17118c.js" as="script"><link rel="preload" href="/assets/js/2.304a0ef6.js" as="script"><link rel="preload" href="/assets/js/12.71ed51ae.js" as="script"><link rel="prefetch" href="/assets/js/10.8e977106.js"><link rel="prefetch" href="/assets/js/11.31d53e97.js"><link rel="prefetch" href="/assets/js/13.4d4df704.js"><link rel="prefetch" href="/assets/js/14.7377804b.js"><link rel="prefetch" href="/assets/js/15.46431ae2.js"><link rel="prefetch" href="/assets/js/16.eb9c3849.js"><link rel="prefetch" href="/assets/js/17.d5fb893f.js"><link rel="prefetch" href="/assets/js/18.0cc18428.js"><link rel="prefetch" href="/assets/js/19.603b0986.js"><link rel="prefetch" href="/assets/js/20.6c115991.js"><link rel="prefetch" href="/assets/js/21.5fa33bcc.js"><link rel="prefetch" href="/assets/js/22.264f6790.js"><link rel="prefetch" href="/assets/js/3.d9c1063d.js"><link rel="prefetch" href="/assets/js/4.8e5dbcef.js"><link rel="prefetch" href="/assets/js/5.b53ec779.js"><link rel="prefetch" href="/assets/js/6.e6dbe999.js"><link rel="prefetch" href="/assets/js/7.2657ad41.js"><link rel="prefetch" href="/assets/js/8.2b709483.js"><link rel="prefetch" href="/assets/js/9.9d18cc15.js">
+    <link rel="preload" href="/assets/css/0.styles.c1070e8a.css" as="style"><link rel="preload" href="/assets/js/app.e8c13b11.js" as="script"><link rel="preload" href="/assets/js/2.304a0ef6.js" as="script"><link rel="preload" href="/assets/js/12.f4c3671b.js" as="script"><link rel="prefetch" href="/assets/js/10.4cb0e7cc.js"><link rel="prefetch" href="/assets/js/11.3c7b819b.js"><link rel="prefetch" href="/assets/js/13.4d4df704.js"><link rel="prefetch" href="/assets/js/14.5e7adab4.js"><link rel="prefetch" href="/assets/js/15.5c8d8f69.js"><link rel="prefetch" href="/assets/js/16.eb9c3849.js"><link rel="prefetch" href="/assets/js/17.b6e0dc52.js"><link rel="prefetch" href="/assets/js/18.a0d2a003.js"><link rel="prefetch" href="/assets/js/19.ab1a72f8.js"><link rel="prefetch" href="/assets/js/20.54e64f6e.js"><link rel="prefetch" href="/assets/js/21.bace469e.js"><link rel="prefetch" href="/assets/js/22.264f6790.js"><link rel="prefetch" href="/assets/js/3.d9c1063d.js"><link rel="prefetch" href="/assets/js/4.8e5dbcef.js"><link rel="prefetch" href="/assets/js/5.0534158e.js"><link rel="prefetch" href="/assets/js/6.6b8265af.js"><link rel="prefetch" href="/assets/js/7.2657ad41.js"><link rel="prefetch" href="/assets/js/8.c49cf662.js"><link rel="prefetch" href="/assets/js/9.da2a01b8.js">
     <link rel="stylesheet" href="/assets/css/0.styles.c1070e8a.css">
   </head>
   <body>
@@ -24,13 +24,16 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>properties</span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>project.build.sourceEncoding</span><span class="token punctuation">&gt;</span></span>UTF-8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>project.build.sourceEncoding</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>properties</span><span class="token punctuation">&gt;</span></span>
-</code></pre></div><h2 id="format-yaml"><a href="#format-yaml" aria-hidden="true" class="header-anchor">#</a> Formát: YAML</h2> <ul><li>Rekursivní zkratka YAML Ain't Markup Language</li> <li>Pro strukturování se používá odsazení 2 nebo 4 mezerami (tabulátory nejsou povoleny)</li> <li>Komentáře začínají znakem #</li> <li>Začátek dokumentu se značí --</li> <li>Využití: Kubernetes, Ansible, Gitlab CI, Docker Compose</li></ul> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token comment"># Some comment</span>
-<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1
-<span class="token key atrule">kind</span><span class="token punctuation">:</span> Pod
-<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
-  <span class="token key atrule">name</span><span class="token punctuation">:</span> rss<span class="token punctuation">-</span>site
-  <span class="token key atrule">labels</span><span class="token punctuation">:</span>
-    <span class="token key atrule">app</span><span class="token punctuation">:</span> web
+</code></pre></div><h2 id="format-yaml"><a href="#format-yaml" aria-hidden="true" class="header-anchor">#</a> Formát: YAML</h2> <ul><li>Rekursivní zkratka YAML Ain't Markup Language</li> <li>Pro strukturování se používá odsazení 2 nebo 4 mezerami (tabulátory nejsou povoleny)</li> <li>Komentáře začínají znakem #</li> <li>Začátek dokumentu se značí --</li> <li>Využití: Kubernetes, Ansible, Gitlab CI, Docker Compose</li></ul> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token punctuation">---</span>
+<span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> kotlilplaybook
+  <span class="token key atrule">hosts</span><span class="token punctuation">:</span> optiplex
+
+  <span class="token key atrule">tasks</span><span class="token punctuation">:</span>
+    <span class="token comment"># Create folder</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> create folder
+      <span class="token key atrule">file</span><span class="token punctuation">:</span>
+        <span class="token key atrule">state</span><span class="token punctuation">:</span> directory
+        <span class="token key atrule">path</span><span class="token punctuation">:</span> <span class="token string">'/tmp/optiplex'</span>
 </code></pre></div><h2 id="format-json"><a href="#format-json" aria-hidden="true" class="header-anchor">#</a> Formát: JSON</h2> <ul><li>Zkratka JavaScript Object Notation</li> <li>Formát pro výměnu dat</li> <li>Založený na JavaScriptu</li> <li>Kolekce párů klíč-hodnota</li> <li>Komentáře nejsou povoleny</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
   <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;gatsby-starter-default&quot;</span><span class="token punctuation">,</span>
   <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Gatsby default starter&quot;</span><span class="token punctuation">,</span>
@@ -100,6 +103,6 @@ fe80::1%lo0     localhost
         </a>
         →
       </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.fb17118c.js" defer></script><script src="/assets/js/2.304a0ef6.js" defer></script><script src="/assets/js/12.71ed51ae.js" defer></script>
+    <script src="/assets/js/app.e8c13b11.js" defer></script><script src="/assets/js/2.304a0ef6.js" defer></script><script src="/assets/js/12.f4c3671b.js" defer></script>
   </body>
 </html>
