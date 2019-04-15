@@ -39,13 +39,16 @@
 - Využití: Kubernetes, Ansible, Gitlab CI, Docker Compose
 
 ```yaml
-# Some comment
-apiVersion: v1
-kind: Pod
-metadata:
-  name: rss-site
-  labels:
-    app: web
+---
+- name: kotlilplaybook
+  hosts: optiplex
+
+  tasks:
+    # Create folder
+    - name: create folder
+      file:
+        state: directory
+        path: '/tmp/optiplex'
 ```
 
 ## Formát: JSON
