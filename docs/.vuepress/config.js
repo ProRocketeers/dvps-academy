@@ -11,6 +11,8 @@ const SIDEBARS = {
         `${KB_PATH_PREFIX}/archiving`,
         `${KB_PATH_PREFIX}/configs`,
         `${KB_PATH_PREFIX}/cron-systemd`,
+        `${KB_PATH_PREFIX}/ssh`,
+        `${KB_PATH_PREFIX}/git`,
         `${KB_PATH_PREFIX}/bash-scripting`,
       ],
     },
@@ -21,9 +23,7 @@ const SIDEBARS = {
         `${KB_PATH_PREFIX}/centos`,
         `${KB_PATH_PREFIX}/dhcp-dns`,
         `${KB_PATH_PREFIX}/ports`,
-        `${KB_PATH_PREFIX}/ssh`,
         `${KB_PATH_PREFIX}/nginx`,
-        `${KB_PATH_PREFIX}/git`,
         `${KB_PATH_PREFIX}/node`,
       ],
     },
@@ -37,7 +37,11 @@ const SIDEBARS = {
       ],
     },
   ],
-  homework: [`${HOMEWORK_PATH_PREFIX}/1`],
+  homework: [
+    `${HOMEWORK_PATH_PREFIX}/1`,
+    `${HOMEWORK_PATH_PREFIX}/2`,
+    `${HOMEWORK_PATH_PREFIX}/3`,
+  ],
 }
 
 module.exports = {

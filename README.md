@@ -17,3 +17,7 @@ yarn build
 ```
 yarn deploy
 ```
+
+## License
+
+MIT
