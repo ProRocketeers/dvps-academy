@@ -60,10 +60,10 @@ Více informací [tady](https://git-scm.com/book/en/v2/Getting-Started-First-Tim
 
 ## Forknutí projektu
 
-- Repozitář: https://gitlab.com/prorocketeers/prg-academy/prorockektears
-- Klikneme na tlačítko `fork`
+- Repozitář: [https://gitlab.com/prorocketeers/prg-academy/prorockektears](https://gitlab.com/prorocketeers/prg-academy/prorockektears)
+- Klikněte na tlačítko `fork`
 
-## Práce s Gitem
+## Práce s repozitářem
 
 - Naklonujeme si repositář lokálně pomocí příkazu `git clone $URL`
 - Provedeme úpravy, poté
@@ -72,4 +72,30 @@ Více informací [tady](https://git-scm.com/book/en/v2/Getting-Started-First-Tim
 git add .
 git commit -m "Nejaky popis prace"
 git push origin
+```
+
+## Větvení (branches)
+
+- Odloučení od hlavní vývojové větve
+- Oddělená práce na zdrojovém kódu
+
+```bash
+# Nova branch
+git checkout -b nova-branch
+
+# Existující branch
+git checkout existujici-branch
+```
+
+## Merge/pull requests
+
+- Požadavek pro nasazení změn do cílové větve, nebo v případě forknutého projektu do výchozího repozitáře
+- Vytváří se v grafickém rozhraní
+
+```bash
+# Lokalni merge
+git pull origin nova-branch
+
+# Rebase na vychozi vetev
+git rebase vychozi-branch
 ```

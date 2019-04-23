@@ -25,6 +25,7 @@ const SIDEBARS = {
         `${KB_PATH_PREFIX}/ports`,
         `${KB_PATH_PREFIX}/nginx`,
         `${KB_PATH_PREFIX}/node`,
+        `${KB_PATH_PREFIX}/mongodb`,
       ],
     },
     {
@@ -34,6 +35,8 @@ const SIDEBARS = {
         `${KB_PATH_PREFIX}/ansible`,
         `${KB_PATH_PREFIX}/gitlab`,
         `${KB_PATH_PREFIX}/docker`,
+        `${KB_PATH_PREFIX}/provisioning`,
+        `${KB_PATH_PREFIX}/influxdb`,
       ],
     },
   ],
