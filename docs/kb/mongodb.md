@@ -7,7 +7,7 @@
 - Uložené dokumenty jsou namapovány na kód aplikace
 - Komunikace probíhá přes JS API
 - Komerční použití je podmíněno licencí [SSPL](https://www.mongodb.com/licensing/server-side-public-license)
-- Instrukce k instalace [tady](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu)
+- Instrukce k instalaci [tady](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu)
 
 ## Robo3T
 
