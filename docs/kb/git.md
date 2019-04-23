@@ -94,7 +94,7 @@ git checkout existujici-branch
 
 ```bash
 # Lokalni merge
-git pull origin nova-branch
+git merge --no-ff nova-branch
 
 # Rebase na vychozi vetev
 git rebase vychozi-branch
