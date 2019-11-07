@@ -17,7 +17,7 @@ console.log(`Created CNAME file pointing to ${PAGES_DOMAIN}`)
 publish(
   DEST_PATH,
   {
-    message: `Deploy ${format(new Date(), 'DD/MM/YYYY')}`,
+    message: `Deploy ${format(new Date(), 'dd/MM/yyyy')}`,
   },
   () => {
     console.log(`Successfully deployed to ${PAGES_DOMAIN}`)
