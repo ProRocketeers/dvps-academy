@@ -9,10 +9,10 @@
     "deploy": "node scripts/deploy.js"
   },
   "dependencies": {
-    "date-fns": "^1.30.1",
-    "vuepress": "^1.0.0-alpha.46"
+    "date-fns": "^2.7.0",
+    "vuepress": "^1.2.0"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.1.1"
   }
 }
